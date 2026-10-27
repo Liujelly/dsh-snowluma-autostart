@@ -1,0 +1,24 @@
+{
+  "name": "dsh-snowluma-autostart",
+  "version": "0.1.0",
+  "description": "DSH 启动时自动拉起本机 SnowLuma（OneBot 后端），供 dsh-nia-qq 连接。",
+  "license": "MIT",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": ["deepseek-harness", "dsh-plugin", "snowluma", "onebot"],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
